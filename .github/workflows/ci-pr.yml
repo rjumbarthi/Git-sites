@@ -32,6 +32,12 @@ jobs:
             CNAME
             app-ads.txt
             .nojekyll
+            taskera/index.html
+            taskera/support/index.html
+            taskera/privacy/index.html
+            taskera/terms/index.html
+            taskera/delete/index.html
+            taskera/style.css
             kaal/index.html
             kaal/support/index.html
             kaal/privacy/index.html
@@ -63,4 +69,4 @@ jobs:
             "rules": {}
           }
           EOF
-          npx --yes stylelint@16 "kaal/style.css" --config /tmp/.stylelintrc.json
+          npx --yes stylelint@16 "taskera/style.css" "kaal/style.css" --config /tmp/.stylelintrc.json
