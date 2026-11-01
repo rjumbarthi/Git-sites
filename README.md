@@ -1,6 +1,6 @@
 # Kaal-site
 
-Static marketing and legal site for **Kaal — Focus & Task Planner**, served on GitHub Pages at [jumbarthi.com](https://jumbarthi.com).
+Static marketing and legal site for **Kaal — Focus & Task Planner**, served on GitHub Pages at [port443.llc](https://port443.llc).
 
 This repository is **web content only** (HTML/CSS). It does not contain Kaal mobile or desktop app source, APIs, or architecture.
 
@@ -8,7 +8,7 @@ This repository is **web content only** (HTML/CSS). It does not contain Kaal mob
 
 | Item | Value |
 |------|--------|
-| Domain | `jumbarthi.com` (see `CNAME`) |
+| Domain | `port443.llc` (see `CNAME`) |
 | Hosting | GitHub Pages |
 | Default branch | `main` |
 | Repo | [`rjumbarthi/Kaal-site`](https://github.com/rjumbarthi/Kaal-site) |
@@ -27,13 +27,13 @@ Root `/` redirects to `/kaal/` (meta refresh + canonical link in `index.html`).
 | `/kaal/delete` | `kaal/delete/index.html` | Account & data deletion (in-app + email request) |
 | `/kaal/style.css` | `kaal/style.css` | Shared stylesheet for `/kaal/*` pages |
 
-Shared layout: top nav (Home / Support / Privacy / Terms / Delete as relevant), footer with © 2026 Kaal · Maryland, USA, and `kaal_support@jumbarthi.com`.
+Shared layout: top nav (Home / Support / Privacy / Terms / Delete as relevant), footer with © 2026 Kaal · Maryland, USA, and `kaal_support@port443.llc`.
 
 ## Other root files
 
 | File | Role |
 |------|------|
-| `CNAME` | Custom domain: `jumbarthi.com` |
+| `CNAME` | Custom domain: `port443.llc` |
 | `.nojekyll` | Disables Jekyll processing on GitHub Pages (serves files as-is) |
 | `.pages-rebuild` | Build stamp (e.g. `build: 2026-06-27T14:46:28Z`) — used to trigger or record Pages rebuilds |
 | `app-ads.txt` | Ad publisher authorization line for Google (`pub-9013964076288950`) |
@@ -41,7 +41,7 @@ Shared layout: top nav (Home / Support / Privacy / Terms / Delete as relevant), 
 ## How GitHub Pages is used
 
 1. Content lives as static files on `main`.
-2. Pages serves the site; `CNAME` maps **jumbarthi.com** to this Pages site.
+2. Pages serves the site; `CNAME` maps **port443.llc** to this Pages site.
 3. `.nojekyll` ensures paths and assets are not rewritten by Jekyll.
 4. Update content by editing HTML/CSS and pushing to `main` (or opening a PR). After deploy, verify `/`, `/kaal/`, and the legal/support routes.
 
@@ -66,7 +66,7 @@ Document app internals only when they are shipped and sourced from Engineering /
 
 ## Contact
 
-Support: [kaal_support@jumbarthi.com](mailto:kaal_support@jumbarthi.com)
+Support: [kaal_support@port443.llc](mailto:kaal_support@port443.llc)
 
 ## CI workflows
 
@@ -83,11 +83,11 @@ To run production verification manually: **Actions → Verify Deploy → Run wor
 
 After a Pages deploy (or DNS/CNAME change), confirm these return successfully (the **Verify Deploy** workflow checks the same URLs automatically):
 
-1. `https://jumbarthi.com/` (redirects to `/kaal/`)
-2. `https://jumbarthi.com/kaal/`
-3. `https://jumbarthi.com/kaal/privacy`
-4. `https://jumbarthi.com/kaal/terms`
-5. `https://jumbarthi.com/kaal/support`
-6. `https://jumbarthi.com/kaal/delete`
+1. `https://port443.llc/` (redirects to `/kaal/`)
+2. `https://port443.llc/kaal/`
+3. `https://port443.llc/kaal/privacy`
+4. `https://port443.llc/kaal/terms`
+5. `https://port443.llc/kaal/support`
+6. `https://port443.llc/kaal/delete`
 
-Optional quick check: `curl -sI https://jumbarthi.com/kaal/ | head -n 1` (expect `200` or a redirect chain that lands on `/kaal/`).
+Optional quick check: `curl -sI https://port443.llc/kaal/ | head -n 1` (expect `200` or a redirect chain that lands on `/kaal/`).
