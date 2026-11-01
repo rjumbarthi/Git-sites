@@ -1,4 +1,4 @@
-# Git-site
+# Git-sites
 
 Static marketing and legal site for **Kaal — Focus & Task Planner**, served on GitHub Pages at [port443.llc](https://port443.llc).
 
