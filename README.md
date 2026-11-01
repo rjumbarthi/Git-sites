@@ -1,4 +1,4 @@
-# Kaal-site
+# Git-site
 
 Static marketing and legal site for **Kaal — Focus & Task Planner**, served on GitHub Pages at [port443.llc](https://port443.llc).
 
@@ -11,7 +11,7 @@ This repository is **web content only** (HTML/CSS). It does not contain Kaal mob
 | Domain | `port443.llc` (see `CNAME`) |
 | Hosting | GitHub Pages |
 | Default branch | `main` |
-| Repo | [`rjumbarthi/Kaal-site`](https://github.com/rjumbarthi/Kaal-site) |
+| Repo | [`rjumbarthi/Kaal-site`](https://github.com/rjumbarthi/Git-site) |
 
 Root `/` redirects to `/kaal/` (meta refresh + canonical link in `index.html`).
 
